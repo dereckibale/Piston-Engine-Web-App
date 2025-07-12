@@ -132,15 +132,13 @@ function Calculator(){
                 }
         }
 
-        if(p1 && p2){
-            
+        if(P1.current || P2.current || P3.current || P4.current){
+            setCompression_Ratio((P2.current / P1.current) ** (1 / 1.4))
+            compression_ratio.current = (P2.current / P1.current) ** (1 / 1.4)
+            console.log(compression_ratio)
+            setThermal_Efficiency(1 - (1 / Math.pow(compressionRatio.current, 1.4 - 1)))
         }
 
-        //Solve for:
-            //p_1
-            //p_2
-            //p_3
-            //p_4
 
     }
 
