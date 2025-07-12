@@ -133,7 +133,7 @@ function Calculator(){
         }
 
         if(p1 && p2){
-
+            
         }
 
         //Solve for:
